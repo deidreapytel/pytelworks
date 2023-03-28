@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Raleway', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.logo{
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 7em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero h2 {
+    /* Text styles */
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+span{
+    text-align: center;
+    color: #800000;
+    display: none;
+}
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+
+    text-align: center;
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(https://storage.googleapis.com/www.pytelworks.com/imgs/pw-road.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 920px){
+    hero-inner{
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    hero-inner{
+        margin-top: 150px;
+    }
+    h1{
+        font-size: 5em;
+    }
+}
+
+.hero .btn {
+    background-color: #FFFFFF;
+    color: #397514;
+    opacity: 0.7;
+    border: 1px solid #6cac44;
+    border-radius: 6px;
+    padding: 0.9375rem 1.875rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: 1s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .btn:hover{
+    opacity: 1;
+}
+
+.hero .btn:active{
+    opacity: 1;
+}
+
+.hero .btn:focus{
+    opacity: 1;
+}
+.hero .btn:hover>span{
+    display:inline-block;
+    border: 1px solid #FFFFFF;
+}
+
+.hero .btn:active>span{
+    display:inline-block;
+    opacity: 1;
+    border: 1px solid #FFFFFF;
+   
+}
+.hero .btn:focus>span{
+    display:inline-block;
+    opacity: 1;
+    border: 1px solid #FFFFFF;
+    
+}
+
+
+
